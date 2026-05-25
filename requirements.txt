@@ -1,0 +1,7 @@
+ollama
+pandas
+rich
+tqdm
+matplotlib
+jupyter
+ipywidgets
