@@ -1,5 +1,7 @@
 ollama
 pandas
+python-dotenv
+pydantic
 rich
 tqdm
 matplotlib

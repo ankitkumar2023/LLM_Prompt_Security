@@ -1,21 +1,8 @@
-# safety.py
+from app.clients.ollama_client import client
 
-from ollama import Client
-from config import SAFETY_MODEL
+from app.core.config import SAFETY_MODEL
 
-client = Client(host="http://localhost:11434")
-
-SAFETY_POLICY = """
-You are a safety classifier.
-
-Classify the request as:
-
-SAFE
-or
-UNSAFE
-
-If unsafe, explain why.
-"""
+from app.core.prompts import SAFETY_POLICY
 
 
 def safety_check(user_prompt):

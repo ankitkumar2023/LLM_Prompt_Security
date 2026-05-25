@@ -1,4 +1,12 @@
-# config.py
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OLLAMA_HOST = os.getenv("OLLAMA_HOST")
+
+LOG_PATH = os.getenv("LOG_PATH")
 
 MODELS = {
     "qwen": "qwen2.5:1.5b",
